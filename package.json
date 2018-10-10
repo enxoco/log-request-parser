@@ -1,0 +1,11 @@
+{
+  "name": "log-request-parser",
+  "version": "1.0.0",
+  "description": "Parse http requests from proxy log files",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mike Conrad <mike@enxo.co> (https://enxo.co)",
+  "license": "MIT"
+}
