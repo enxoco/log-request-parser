@@ -236,8 +236,17 @@ exports.parser = function (obj) {
       {"name":"Accuweather", "identifier":"accuweather.com"},
       {"name":"Accuweather", "identifier":"config.88-f.net"},
       {"name":"Accuweather", "identifier":"ec.c.ooyala.com"},
+      {"name":"EPB", "identifier":"epb.com"},
+      {"name":"EPB Online Account services", "identifier":"epbfi.com"},
+      {"name":"NBA Online", "identifier":"nba.com"},
+      {"name":"NFL Online", "identifier":"nfl.com"},
+      {"name":"247Sports", "identifier":"247sports.com"},
+      {"name":"AARP online", "identifier":"aarp.org"},
+      {"name":"Home Depot Online", "identifier":"homedepot.com"},
+      {"name":"Home Depot Online", "identifier":"homedepotemail.com"},
       {"name":"", "identifier":""},
       {"name":"", "identifier":""},
+
 
 
 
@@ -1221,6 +1230,10 @@ exports.parser = function (obj) {
     var gbs = 'Google Background Services'
     var cdn = 'Content Delivery Network'
 
+    // if we have a referrer header, set it as the URL
+    if (o.refHeader) {
+      o.URL = o.refHeader
+    }
 
     for ( var i = 0; i < bundleIds.length; i++) {
       if (o.URL.includes(bundleIds[i].identifier) || o.userAgent.includes(bundleIds[i].identifier)) {
@@ -1251,14 +1264,6 @@ exports.parser = function (obj) {
       o.URL = 'My Hurricane Tracker App'
     }
 
-
-    // var amazonRegEx = '/amazon.com.[A-z]{2}/gm'
-
-    // if we have a referrer header, set it as the URL
-    if (o.refHeader) {
-      o.URL = o.refHeader
-    }
-
     if (o.URL.includes('api.')) {
       o.URL = o.URL.replace('api.', '')
     }
@@ -1270,12 +1275,6 @@ exports.parser = function (obj) {
     if (o.URL.includes('WindowsCortanaPane')) {
       o.URL = 'Windows Updates'
     }
-
-
-
-    // if (o.URL.includes('platform.twitter.com')) {
-    //     o.URL = 'Content Delivery Network'
-    // }
 
     if (o.URL.includes('youtube.com/embed')) {
       o.URL = ads
@@ -1312,12 +1311,6 @@ exports.parser = function (obj) {
         o.URL.includes('facebook.com/impression.php')) {
       o.URL = ads
     }
-
-    // if (o.URL.includes('facebook.com') ||
-
-    //     o.URL.includes('facebook.net')) {
-    //     o.URL = 'Facebook'
-    // }
 
     if (o.URL.includes('gstatic.com')) {
       o.URL = 'Google'
@@ -1358,28 +1351,6 @@ exports.parser = function (obj) {
       o.URL = 'Google Maps'
     }
 
-
-    // if (o.URL.includes('twimg.com') ||
-    //
-    //     o.URL.includes('t.co')) { //Need to find a way to more accurately portray this information
-    //     o.URL = 'Content Delivery Network'
-    // }
-
-
-
-
-
-
-    // if (o.URL.includes('pinterest.com') ||
-    //
-    //     o.URL.includes('pinimg.com') ||
-    //     o.URL.includes('pinterest.i') ||
-    //     o.URL.includes('pinterest.r') ||
-    //
-    //     o.URL.includes('www-pinterest-com.cdn.ampproject.org')) {
-    //     o.URL = 'Pinterest'
-    // }
-
     if (o.URL.includes('grouponcdn.com') ||
         o.URL.includes('www.groupon.')) {
       o.URL = 'Groupon'
@@ -1403,10 +1374,6 @@ exports.parser = function (obj) {
     if (o.URL.includes('redbox.com')) {
       o.URL = 'Redbox'
     }
-
-    // if (o.URL.includes('bat.bing.com')) {
-    //  o.URL = 'Bing Advertising'
-    // }
 
     if (o.URL.includes('instagram.com')) {
       o.URL = 'Instagram'
@@ -1467,8 +1434,6 @@ exports.parser = function (obj) {
         o.URL.includes('planning.center')) {
       o.URL = 'Planning Center'
     }
-
-
 
     if (o.URL.includes('snimg.com') ||
         o.URL.includes('sportingnews.com') ||
