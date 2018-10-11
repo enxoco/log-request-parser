@@ -256,115 +256,39 @@ var sites = [
   {"name":"Economy Honda", "identifier":"economyhonda.com"},
   {"name":"Oops Repair", "identifier":"oopsrepair.com"},
   {"name":"Trulia.com - Real Estate Listing", "identifier":"trulia.com"},
+  {"name":"iCloud Content", "identifier":"icloud-content.com"},
+  {"name":"Yummly - Personalized Recipes", "identifier":"yummly.com"},
+  {"name":"The Chapel", "identifier":"bennett-lamb-trzh.squarespace.com"},
+  {"name":"The Chapel", "identifier":"thechapelcleveland.com"},
+  {"name":"Hamilton County Maps", "identifier":"gismaps.hamiltontn.gov"},
+  {"name":"Hamilton County Maps", "identifier":"mapsdev.hamiltontn.gov"},
+  {"name":"Hamilton County Online", "identifier":"hamiltontn.gov"},
+  {"name":"Honey - Automatic Coupons", "identifier":"joinhoney.com"},
+  {"name":"Priceline", "identifier":"priceline.com"},
+  {"name":cdn, "identifier":"fbcdn.net"},
+  {"name":"USAA Online", "identifier":"usaa.com"},
+  {"name":"Vimeo - Online Videos", "identifier":"vimeo.com"},
+  {"name":"Vimeo - Online Videos", "identifier":"vimeo.akamaized.net"},
+  {"name":"Vimeo - Online Videos", "identifier":"vimeocdn.com"},
+  {"name":"Mugshots - Times Free Press", "identifier":"right2know.timesfreepress.com"},
+  {"name":"Times Free Press", "identifier":"timesfreepress.com"},
+  {"name":"Audible", "identifier":"audible.com"},
+  {"name":"Hollywoodstory.tv - Celebrity News", "identifier":"hollywoodstory.tv"},
+  {"name":"Fingersoft - Mobile Games", "identifier":"fingersoft.net"},
+  {"name":"Fingersoft - Mobile Games", "identifier":"fingersoft.com"},
+  {"name":"Disney Circle", "identifier":"meetcircle.com"},
+  {"name":"Mailchimp - Email Marketing", "identifier":"mailchimp.com"},
+  {"name":"IMDB Online", "identifier":"imdb.com"},
+  {"name":"Letgo - Buy and Sell things", "identifier":"letgo.com"},
+  {"name":"Letgo - Buy and Sell things", "identifier":"letgo.onelink.me"},
+  {"name":"Churchstreaming.tv - Church services online streaming", "identifier":"churchstreaming.tv"},
+  {"name":"Churchstreaming.tv - Church services online streaming", "identifier":"yourstreamlive.com"},
+  {"name":"Adobe Spark - Digital Marketing", "identifier":"cc-api-storage.adobe.io"},
+  {"name":"23 and Me Ancestry and DNA", "identifier":"23andme.com"},
+  {"name":"VW Vortex - Volkswagen Enthusiasts", "identifier":"d1r55yzuc1b1bw.cloudfront.net"},
   {"name":"", "identifier":""},
 
 ]
-
-if (o.URL.includes('icloud-content.com') ||
- o.userAgent.includes('cloudd')) {
-  o.URL = 'iCloud content'
-}
-
-if (o.URL.includes('yummly.com') ||
-    o.userAgent.includes('Yummly-iPhone')) {
-      o.URL = 'Yummly - Personalized Recipes'
-    }
-
-
-    if (o.URL.includes('bennett-lamb-trzh.squarespace.com') ||
-      o.URL.includes('thechapelcleveland.com')) {
-      o.URL = 'The Chapel Cleveland.com'
-    }
-
-        if (o.URL.includes('gismaps.hamiltontn.gov') ||
-            o.URL.includes('mapsdev.hamiltontn.gov')) {
-          o.URL = 'Hamilton County Maps'
-        }
-
-        if (o.URL.includes('hamiltontn.gov')) {
-          o.URL = 'Hamilton County Online'
-        }
-
-        if (o.URL.includes('joinhoney.com')) {
-          o.URL = 'Honey - Automatic Coupons'
-        }
-
-        if (o.URL.includes('priceline.com')) {
-          o.URL = 'Priceline.com'
-        }
-
-        // if (o.URL.includes('epicgames.com')) {
-        //   o.URL = 'Epic Games - Mobile Games'
-        // }
-
-        if (o.URL.includes('fbcdn.net')) {
-          o.URL = cdn
-        }
-
-        if (o.URL.includes('usaa.com')) {
-          o.URL = 'USAA.com'
-        }
-        if (o.URL.includes('vimeo.com') ||
-            o.URL.includes('vimeo.akamaized.net') ||
-            o.URL.includes('vimeocdn.com')) {
-          o.URL = 'Vimeo - Online Videos'
-        }
-
-        if (o.URL.includes('right2know.timesfreepress.com')) {
-          o.URL = 'Times Free Press - Mugshots'
-        }
-
-        if (o.URL.includes('timesfreepress.com')) {
-          o.URL = 'Times Free Press'
-        }
-
-        if (o.URL.includes('audible.com')) {
-          o.URL = 'Audible.com'
-        }
-
-        if (o.URL.includes('hollywoodstory.tv')) {
-          o.URL = 'Hollywoodstory.tv - Celebrity News'
-        }
-
-        if (o.URL.includes('fingersoft.net') ||
-            o.URL.includes('fingersoft.com')) {
-          o.URL = 'Fingersoft - Mobile Games'
-        }
-
-        if (o.URL.includes('meetcircle.com')) {
-          o.URL = 'Disney Circle'
-        }
-
-        if (o.URL.includes('mailchimp.com')) {
-          o.URL = 'Mailchimp - Email Marketing'
-        }
-
-        if (o.URL.includes('imdb.com') ||
-            o.URL.includes('fls-na.amazon.com')) {
-          o.URL = 'IMDB.com'
-        }
-
-        if (o.URL.includes('letgo.com') ||
-            o.URL.includes('letgo.onelink.me')) {
-          o.URL = 'Letgo - Buy and Sell things'
-        }
-
-        if (o.URL.includes('churchstreaming.tv') ||
-            o.URL.includes('yourstreamlive.com')) {
-          o.URL = 'Churchstreaming.tv - Church services online streaming'
-        }
-
-        if (o.URL.includes('cc-api-storage.adobe.io')) {
-          o.URL = 'Adobe Spark - Digital Marketing'
-        }
-
-        if (o.URL.includes('23andme.com')) {
-          o.URL = '23 and Me Ancestry and DNA'
-        }
-
-        if (o.URL.includes('d1r55yzuc1b1bw.cloudfront.net')) {
-          o.URL = 'VW Vortex - Volkswagen Enthusiasts'
-        }
 
         // Remove this from results
         if (o.URL.includes('facebook.com') && o.URL.includes('domain%3D')) {
@@ -861,4 +785,15 @@ if (o.URL.includes('yummly.com') ||
                 o.URL.includes('foxnews.com') ||
                 o.URL.includes('foxnews-com.cdn.ampproject.org')) {
               o.URL = 'Fox News'
+            }
+
+            if (o.URL.includes('techbargains.com')) {
+              o.URL = 'Tech Bargains'
+            }
+
+            if (o.URL.includes('fsdn.com') ||
+                o.URL.includes('slashdot.org') ||
+                o.URL.includes('d3tglifpd8whs6.cloudfront.net') ||
+                o.URL.includes('slashdotmedia.com')) { // fsdn.com is used to serve assets for slashdot
+              o.URL = 'Slashdot Nerd News'
             }

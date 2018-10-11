@@ -1067,6 +1067,8 @@ exports.parser = function (obj) {
       {"identifier":"AccuWeather", "name":"Accuweather"},
       {"identifier":"FortniteGame", "name":"Fortnite app"},
       {"identifier":"AppleNewsAgent", "name":"Apple News app"},
+      {"identifier":"cloudd", "name":"iCloud Content"},
+      {"identifier":"Yummly-iPhone", "name":"Yummly - Personalized Recipes"},
     ]
 
 
@@ -1205,16 +1207,7 @@ exports.parser = function (obj) {
       o.URL = 'Sound Cloud'
     }
 
-    if (o.URL.includes('techbargains.com')) {
-      o.URL = 'Tech Bargains'
-    }
 
-    if (o.URL.includes('fsdn.com') ||
-        o.URL.includes('slashdot.org') ||
-        o.URL.includes('d3tglifpd8whs6.cloudfront.net') ||
-        o.URL.includes('slashdotmedia.com')) { // fsdn.com is used to serve assets for slashdot
-      o.URL = 'Slashdot Nerd News'
-    }
 
     if (o.userAgent.includes('Podcasts')) {
       o.URL = 'Apple Podcasts App'
