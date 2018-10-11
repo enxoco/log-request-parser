@@ -1176,55 +1176,7 @@ exports.parser = function (obj) {
       o.URL = 'Snapchat'
     }
 
-    if (o.URL.includes('bleacherreport.com') ||
-        o.URL.includes('bleacherreport.net') ||
-        o.URL.includes('bleacherreptrans-a.akamaihd.net')) {
-      o.URL = 'Bleacher Report'
-    }
 
-    if (o.URL.includes('nflxso.net') ||
-        o.URL.includes('netflix.com') ||
-        o.URL.includes('198.38.99.1') ||
-        o.URL.includes('66.18.33.6') ||
-        o.URL.includes('66.18.34.4') ||
-        o.URL.includes('nflxvideo.net')) {
-      o.URL = 'Netflix'
-    }
-
-
-    if (o.URL.includes('wellsfargomedia.com') ||
-        o.URL.includes('wellsfargo.com')) {
-      o.URL = 'Wells Fargo'
-    }
-
-    if (o.URL.includes('d1th6rei50eu1y.cloudfront.net') ||
-        o.URL.includes('planningcenterassets.s3.amazonaws.com') ||
-        o.URL.includes('planningcenteronline.com') ||
-        o.URL.includes('pco.bz') ||
-        o.URL.includes('planning.center')) {
-      o.URL = 'Planning Center'
-    }
-
-    if (o.URL.includes('snimg.com') ||
-        o.URL.includes('sportingnews.com') ||
-        o.URL.includes('sporting-news.info')) {
-      o.URL = 'Sporting News'
-    }
-
-    if (o.URL.includes('optimizely.com')) {
-      o.URL = 'Optimizely'
-    }
-
-    if (o.URL.includes('9to5maccom.disqus.com') ||
-        o.URL.includes('9to5mac.com') ||
-        o.URL.includes('9to5mac.files.wordpress.com')) {
-      o.URL = '9 To 5 Mac'
-    }
-
-    if (o.URL.includes('hulu.com') ||
-        o.URL.includes('hulustream.com')) {
-      o.URL = 'Hulu'
-    }
 
     if (o.URL.includes('itunes.apple.com-a.akamaihd.net') ||
         o.URL.includes('itunes.com') ||
@@ -1233,21 +1185,6 @@ exports.parser = function (obj) {
       o.URL = 'Apple iTunes'
     }
 
-    if (o.URL.includes('utmost.org') ||
-        o.URL.includes('d197n5kam3wa4q.cloudfront.net')) {
-      o.URL = 'My Utmost for His Highest'
-    }
-
-    if (o.URL.includes('d1lqe9temigv1p.cloudfront.net') ||
-        o.URL.includes('d29usylhdk1xyu.cloudfront.net') ||
-        o.URL.includes('ajc.com')) {
-      o.URL = 'Atlanta Journal-Constitution - Newpaper'
-    }
-
-    if (o.URL.includes('d21cwiu5j1gnvv.cloudfront.net') ||
-        o.URL.includes('dots.co')) {
-      o.URL = 'Two Dots - Puzzle Game'
-    }
 
     if (o.URL.includes('bible.com') ||
         o.URL.includes('youversion.com') ||
@@ -1292,20 +1229,7 @@ exports.parser = function (obj) {
       o.URL = 'Microsoft Outlook'
     }
 
-    if (o.URL.includes('icloud.com') ||
-        o.URL.includes('blobstore.apple.com')) {
-      o.URL = 'iCloud'
-    }
 
-    if (o.URL.includes('musiciansfriend.com')) {
-      o.URL = 'Musicians Friend.com'
-    }
-
-    if (o.URL.includes('fncstatic.com') ||
-        o.URL.includes('foxnews.com') ||
-        o.URL.includes('foxnews-com.cdn.ampproject.org')) {
-      o.URL = 'Fox News'
-    }
 
     if (o.URL.includes('groupme.com') ||
         o.userAgent.includes('GroupMe') ||
@@ -1313,106 +1237,6 @@ exports.parser = function (obj) {
       o.URL = 'Groupme'
     }
 
-    if (o.URL.includes('sprtlive16.akamaized.net') ||
-        o.URL.includes('nbcsports.com') ||
-        o.URL.includes('nbcume.hb.omtrdc.net"')) {
-      o.URL = 'NBC Sports'
-    }
-
-    if (o.URL.includes('justin.tv') ||
-        o.URL.includes('video-edge-c2a3d4.atl01.hls.ttvnw.net"')) {
-      o.URL = 'Twitch Live streaming'
-    }
-
-    if (o.URL.includes('myaccount.google.com')) {
-      o.URL = 'Gmail account settings'
-    }
-
-    if (o.URL.includes('utc.edu')) {
-      o.URL = 'UTC Online'
-    }
-
-    if (o.URL.includes('blubrry.com') ||
-        o.URL.includes('pcr.apple.com')) {
-      o.URL = 'Online Podcasts'
-    }
-
-    if (o.URL.includes('tumblr.com')) {
-      o.URL = 'Tumblr Online Blogs'
-    }
-
-    if (o.URL.includes('d1e7kr0efngifs.cloudfront.net') ||
-        o.URL.includes('blackboard.com')) {
-      o.URL = 'Blackboard Online Learning'
-    }
-
-    if (o.URL.includes('v.redd.it')) {
-      o.URL = 'Reddit Videos'
-    }
-
-    if (o.URL.includes('mail.aol.com')) {
-      o.URL = 'AOL WebMail'
-    }
-
-    if (o.URL.includes('aol.com') ||
-        o.URL.includes('aolcdn.com')) {
-      o.URL = 'AOL.COM'
-    }
-
-    if (o.URL.includes('nimblebit.com')) {
-      o.URL = 'Nimblebit Games'
-    }
-
-    if (o.URL.includes('verizon.com') ||
-        o.URL.includes('verizonwireless.com')) {
-      o.URL = 'Verizon Wireless'
-    }
-
-    if (o.URL.includes('macrumors.com')) {
-      o.URL = 'Mac Rumors - Apple News'
-    }
-
-    // This is a bad one, definately need to block.  When running the app it downloads a JSON file containing a list of known porn sites in the background.
-    // https://f43d76c20358c312d1b5be2de6e5dc43ia.com/v1/unblockedvideo?countryCode=US&os=ios
-    if (o.URL.includes('di4y6ic2m2jmc.cloudfront.net') ||
-        o.URL.includes('f43d76c20358c312d1b5be2de6e5dc43ia.com') ||
-        o.URL.includes('alohabrowser.com')) {
-      o.URL = 'Aloha VPN browser'
-    }
-
-    if (o.URL.includes('clashroyaleapp.com') ||
-        o.URL.includes('1681.engine.mobileapptracking.com') ||
-        o.URL.includes('clashroyale.com') ||
-        o.URL.includes('cr.clan-play.com')) {
-      o.URL = 'Clash Royale Games'
-    }
-
-    if (o.URL.includes('iforgot.apple.com')) {
-      o.URL = 'Apple Account settings'
-    }
-
-    if (o.URL.includes('gc.apple.com')) {
-      o.URL = 'iCloud Game Center'
-    }
-
-    if (o.URL.includes('b343.playfabapi.com')) {
-      o.URL = 'Idle Miner Tycoon - Game'
-    }
-
-    if (o.URL.includes('c845.playfabapi.com') ||
-        o.URL.includes('c845.playfabapi.com')) {
-      o.URL = 'Roller Coaster Tycoon - Game'
-    }
-
-    if (o.URL.includes('milb.com')) {
-      o.URL = 'Minor League Baseball'
-    }
-
-    if (o.URL.includes('zillow.com') ||
-        o.URL.includes('collector-pxhyx10rg3.perimeterx.net') ||
-        o.URL.includes('zillowstatic.com')) {
-      o.URL = 'Zillow'
-    }
 
     if (o.URL.includes('prime.amazon.com') ||
       o.userAgent.includes('InstantVideo.US') ||
