@@ -1043,6 +1043,32 @@ exports.parser = function (obj) {
       {"name":"Email","identifier":"com.easilydo.mail"},
       {"name":"Mobile Pass","identifier":"us.mobilepassport.ios"},
       {"name":"Golden Girls","identifier":"com.baretreemedia.GoldenGirls"}
+      {"name":"Video Game News, Reviews, and Walkthroughs - IGN.com","identifier":"dc72976c7e9a4e749e3af5d95.litix.io"}
+      {"name":"My Hurricane Tracker App","identifier":"a.appbaqend.com"}
+      {"name":"My Hurricane Tracker App","identifier":"a.26f396e0b71780f057be4d4af8ebe55b.com"}
+      {"name":"My Hurricane Tracker App","identifier":"My%20Hurricane%20Tracker"}
+      {"name":"Youtube","identifier":"youtube.com"}
+      {"name":"Youtube","identifier":"ytimg.com"}
+      {"name":"Youtube","identifier":"googlevideo.com"}
+      {"name":"Youtube","identifier":"yt3.ggpht.com"}
+      {"name":"Youtube","identifier":"youtu.be"}
+      {"name":"Youtube","identifier":"YouTube"}
+      {"name":"Youtube","identifier":"com.google.ios.youtube"}
+      {"name":"Youtube","identifier":"youtubei.googleapis.com:"}
+      {"name":"Gmail","identifier":"mail.google.com"}
+      {"name":"Gmail","identifier":"inbox.google.com"}
+      {"name":"Gmail","identifier":"ogs.google.com"}
+      {"name":"Gmail","identifier":"com.google.Gmail"}
+      {"name":"Gmail","identifier":"mtalk.google.com"}
+      {"name":"Google Drive","identifier":"drive.google.com"}
+      {"name":"Google Drive","identifier":"Google.Drive"}
+      {"name":"Google Maps","identifier":"maps.google.com"}
+      {"name":"Google Maps","identifier":"geo0.ggpht.com"}
+      {"name":"Google Maps","identifier":"geo1.ggpht.com"}
+      {"name":"Google Maps","identifier":"geo2.ggpht.com"}
+      {"name":"Google Maps","identifier":"geo3.ggpht.com"}
+      {"name":"Google Maps","identifier":"com.google.Maps"}
+      {"name":"Google Maps","identifier":"google.com/maps"}
     ]
     var userAgents = [
       {"identifier":"ZillowMap", "name": "Zillow App"},
