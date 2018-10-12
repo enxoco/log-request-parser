@@ -286,9 +286,200 @@ var sites = [
   {"name":"Adobe Spark - Digital Marketing", "identifier":"cc-api-storage.adobe.io"},
   {"name":"23 and Me Ancestry and DNA", "identifier":"23andme.com"},
   {"name":"VW Vortex - Volkswagen Enthusiasts", "identifier":"d1r55yzuc1b1bw.cloudfront.net"},
+  {"name":"Redbox", "identifier":"redbox.com"},
+  {"name":"Instagram", "identifier":"instagram.com"},
+  {"name":"Spotify", "identifier":"spotify.com"},
+  {"name":"Spotify", "identifier":"scdn.co"},
+  {"name":"Waze Navigation App", "identifier":"waze.com"},
+  {"name":"Online Games", "identifier":"unity3d.com"},
+  {"name":"Flixster By Fandango", "identifier":"flixsterstatic.s3-us-west-2.amazonaws.com"},
+  {"name":"Uber - Ridesharing", "identifier":"uber.com"},
+  {"name":"NCAA Sports Online", "identifier":"ncaa.com"},
+  {"name":"Find My Friends", "identifier":"fmfmobile.icloud.com"},
+  {"name":"Find My Friends", "identifier":"fmip.icloud.com"},
+  {"name":"Apple Calendar App", "identifier":"caldav.icloud.com"},
+  {"name":cdn, "identifier":"streamrail.com"},
+  {"name":cdn, "identifier":"streamrail.net"},
+  {"name":"Angry Birds Game", "identifier":"cloud.rovio.com/apdrive/2/apps/Abba"},
+  {"name":"Angry Birds Game", "identifier":"cloudassets-a.akamaihd.net/apdrive/Abba"},
+  {"name":gbs, "identifier":"mtalk.google.com"},
+  {"name":gbs, "identifier":"play.google.com"},
+  {"name":gbs, "identifier":"notifications.google.com"},
+  {"name":gbs, "identifier":"hangouts.google.com"},
+  {"name":abs, "identifier":"lcdn-locator.apple.com"},
+  {"name":abs, "identifier":"push.apple.com"},
+  {"name":abs, "identifier":"cl1.apple.com"},
+  {"name":abs, "identifier":"cl2.apple.com"},
+  {"name":abs, "identifier":"cl3.apple.com"},
+  {"name":abs, "identifier":"cl4.apple.com"},
+  {"name":abs, "identifier":"cl5.apple.com"},
+  {"name":abs, "identifier":"iphonesubmissions.apple.com"},
+  {"name":abs, "identifier":"iphone-ld.apple.com"},
+  {"name":abs, "identifier":"valid.apple.com"},
+  {"name":abs, "identifier":"gs-loc.apple.com"},
+  {"name":abs, "identifier":"identity.ess.apple.com"},
+  {"name":abs, "identifier":"17.167.195.92"},
+  {"name":abs, "identifier":"17.167.193.57"},
+  {"name":abs, "identifier":"mesu.apple.com"},
+  {"name":abs, "identifier":"gsas.apple.com"},
+  {"name":"Move.com - Online", "identifier":"rdcpix.com"},
+  {"name":"Move.com - Online", "identifier":"move.com"},
+  {"name":"McAfee Antivirus", "identifier":"mcafee.com"},
+  {"name":"Better Business Bureau", "identifier":"bbb.org"},
+  {"name":"AirBnB", "identifier":"airbnb.com"},
+  {"name":"AirBnB", "identifier":"a0.muscache.com"},
+  {"name":"AirBnB", "identifier":"a1.muscache.com"},
+  {"name":"AirBnB", "identifier":"a2.muscache.com"},
+  {"name":"AirBnB", "identifier":"t1.musthird.com"},
+  {"name":"AirBnB", "identifier":"www.airbnb."},
+  {"name":"UPS Online", "identifier":"ups.com"},
+  {"name":"Vol Nation Online", "identifier":"volnation.com"},
+  {"name":"Kayak.com", "identifier":"kayak.com"},
+  {"name":"Kayak.com", "identifier":"www.kayak."},
+  {"name":"PayPal", "identifier":"paypal.com"},
+  {"name":"PayPal", "identifier":"paypalobjects.com"},
+  {"name":"Meetup.com - Online community", "identifier":"meetup.com"},
+  {"name":"Meetup.com - Online community", "identifier":"meetupstatic.com"},
+  {"name":cdn, "identifier":"gravatar.com"},
+  {"name":"Movie Pass", "identifier":"moviepass.com"},
+  {"name":"Flex MLS", "identifier":"flexmls.com"},
+  {"name":"Showings.com - Real Estate", "identifier":"showings.com"},
+  {"name":"Discover Credit Card", "identifier":"discover.com"},
+  {"name":cdn, "identifier":"jquery.com"},
+  {"name":"Skype", "identifier":"skype.com"},
+  {"name":"Ebay Online", "identifier":"ebay.com"},
+  {"name":"Ebay Online", "identifier":"www.ebay."},
+  {"name":"Ebay Online", "identifier":"ebayimg.com"},
+  {"name":"Ebay Online", "identifier":""},
+  {"name":"Ebay Online", "identifier":""},
+  {"name":"Bradley County Schools", "identifier":"bradleyschools.org"},
+  {"name":"Blundstone USA - Casual Boots", "identifier":"blundstone.com"},
+  {"name":"Dicks Sporting Goods", "identifier":"bluesombrero.com"},
+  {"name":"Amway Online", "identifier":"amway.com"},
+  {"name":cdn, "identifier":"fontawesome.com"},
+  {"name":cdn, "identifier":"typekit.net"},
+  {"name":"Zedge.net - Free wallpapers and ringtones", "identifier":"zedge.net"},
+  {"name":"Zedge.net - Free wallpapers and ringtones", "identifier":"zobj.net"},
+  {"name":"T-Mobile Online", "identifier":"tmobile.com"},
+  {"name":"Stripe - Online payments", "identifier":"stripe.com"},
+  {"name":"Pornography", "identifier":"fapdep.com"},
+  {"name":"New York Times Online", "identifier":"nytimes.com"},
+  {"name":"Health Equity - Online HSA", "identifier":"healthequity.com"},
+  {"name":"Maytag Appliances", "identifier":"maytag.com"},
+  {"name":"Trivia Crack App", "identifier":"preguntados.com"},
+  {"name":"USA Today Online", "identifier":"usatoday.com"},
+  {"name":"USA Today Online", "identifier":"amp-usatoday-com.cdn.ampproject.org"},
+  {"name":"Target Online", "identifier":"target.com"},
+  {"name":"Target Online", "identifier":"scene7.targetimg1.com"},
+  {"name":"Target Online", "identifier":"target.scene7.com"},
+  {"name":cdn, "identifier":".woff2"},
+  {"name":ads, "identifier":"/1.gif"},
+  {"name":"Jack Box Games", "identifier":"jackboxgames.com"},
+  {"name":"Jack Box Games", "identifier":"jackbox.tv"},
+  {"name":"Home Depot Online", "identifier":"contentgrid.homedepot-static.com"},
+  {"name":"Home Depot Online", "identifier":"homedepot.com"},
+  {"name":"Credit Karma", "identifier":"creditkarmacdn-a.akamaihd.net"},
+  {"name":"Credit Karma", "identifier":"creditkarma.com"},
+  {"name":"Credit Karma", "identifier":"creditkarma.zendesk.com"},
+  {"name":"Yeti Coolers", "identifier":"yeti.com"},
+  {"name":"Yeti Coolers", "identifier":"emailyeticoolers.com"},
+  {"name":"LLBean Online", "identifier":"llbean.com"},
+  {"name":"Serious Eats Online", "identifier":"www-seriouseats-com.cdn.ampproject.org"},
+  {"name":"Serious Eats Online", "identifier":"seriouseats.com"},
+  {"name":"Microsoft One Note", "identifier":"onenote.com"},
+  {"name":"United Airlines", "identifier":"united.com"},
+  {"name":"Simple - Banking app", "identifier":"simple.com"},
+  {"name":"Flipp Mobile App", "identifier":"flipp.com"},
+  {"name":"Trello", "identifier":"trello.com"},
+  {"name":"Simple Give - Online Giving", "identifier":"simplegive.com"},
+  {"name":"My Utmost for His Highest Online", "identifier":"utmost.org"},
+  {"name":"My Utmost for His Highest Online", "identifier":"d197n5kam3wa4q.cloudfront.net"},
+  {"name":"Atlanta Journal Constitution", "identifier":"ajc.com"},
+  {"name":"Atlanta Journal Constitution", "identifier":"d1lqe9temigv1p.cloudfront.net"},
+  {"name":"Atlanta Journal Constitution", "identifier":"d29usylhdk1xyu.cloudfront.net"},
+  {"name":"Two Dots - Puzzle Game", "identifier":"dots.co"},
+  {"name":"Two Dots - Puzzle Game", "identifier":"d21cwiu5j1gnvv.cloudfront.net"},
+  {"name":"Bleacher Report", "identifier":"bleacherreport.com"},
+  {"name":"Bleacher Report", "identifier":"bleacherreport.net"},
+  {"name":"Bleacher Report", "identifier":"bleacherreptrans-a.akamaihd.net"},
+  {"name":"Netflix", "identifier":"nflxso.net"},
+  {"name":"Netflix", "identifier":"netflix.com"},
+  {"name":"Netflix", "identifier":"198.38.99.1"},
+  {"name":"Netflix", "identifier":"66.18.33.6"},
+  {"name":"Netflix", "identifier":"66.18.34.4"},
+  {"name":"Netflix", "identifier":"nflxvideo.net"},
+  {"name":"Wells Fargo - Online Banking", "identifier":"wellsfargo.com"},
+  {"name":"Wells Fargo - Online Banking", "identifier":"wellsfargomedia.com"},
+  {"name":"Planning Center Online", "identifier":"d1th6rei50eu1y.cloudfront.net"},
+  {"name":"Planning Center Online", "identifier":"planningcenterassets.s3.amazonaws.com"},
+  {"name":"Planning Center Online", "identifier":"planningcenteronline.com"},
+  {"name":"Planning Center Online", "identifier":"pco.bz"},
+  {"name":"Planning Center Online", "identifier":"planning.center"},
+  {"name":"Sporting News Online", "identifier":"snimg.com"},
+  {"name":"Sporting News Online", "identifier":"sportingnews.com"},
+  {"name":"Sporting News Online", "identifier":"sporting-news.info"},
+  {"name":"9 To 5 Mac.com", "identifier":"9to5maccom.disqus.com"},
+  {"name":"9 To 5 Mac.com", "identifier":"9to5mac.files.wordpress.com"},
+  {"name":"9 To 5 Mac.com", "identifier":"9to5mac.com"},
+  {"name":ads, "identifier":"optimizely.com"},
+  {"name":"Hulu", "identifier":"hulu.com"},
+  {"name":"Hulu", "identifier":"hulustream.com"},
+  {"name":"NBC Sports", "identifier":"sprtlive16.akamaized.net"},
+  {"name":"NBC Sports", "identifier":"nbcsports.com"},
+  {"name":"NBC Sports", "identifier":"nbcume.hb.omtrdc.net"},
+  {"name":"Twitch Live Video Streaming", "identifier":"justin.tv"},
+  {"name":"Twitch Live Video Streaming", "identifier":"video-edge-c2a3d4.atl01.hls.ttvnw.net"},
+  {"name":gbs, "identifier":"myaccount.google.com"},
+  {"name":"UTC Online", "identifier":"utc.edu"},
+  {"name":"Online Podcasts", "identifier":"blubrry.com"},
+  {"name":"Online Podcasts", "identifier":"pcr.apple.com"},
+  {"name":"Tumblr - Online Blogs", "identifier":"tumblr.com"},
+  {"name":"Blackboard Online Learning", "identifier":"blackboard.com"},
+  {"name":"Blackboard Online Learning", "identifier":"d1e7kr0efngifs.cloudfront.net"},
+  {"name":"Reddit Videos", "identifier":"v.redd.it"},
+  {"name":"AOL Webmail", "identifier":"mail.aol.com"},
+  {"name":"AOL Online", "identifier":"aol.com"},
+  {"name":"AOL Online", "identifier":"aolcdn.com"},
+  {"name":"Verizon Wireless", "identifier":"verizon.com"},
+  {"name":"Verizon Wireless", "identifier":"verizonwireless.com"},
+  {"name":"Mac Rumors - Apple News Site", "identifier":"macrumors.com"},
+  {"name":"Aloha VPN Browser", "identifier":"di4y6ic2m2jmc.cloudfront.net"},
+  {"name":"Aloha VPN Browser", "identifier":"f43d76c20358c312d1b5be2de6e5dc43ia.com"},
+  {"name":"Aloha VPN Browser", "identifier":"alohabrowser.com"},
+  {"name":"iCloud", "identifier":"icloud.com"},
+  {"name":"iCloud", "identifier":"blobstore.apple.com"},
+  {"name":"Musicians Friend.com", "identifier":"musiciansfriend.com"},
+  {"name":"Fox News", "identifier":"fncstatic.com"},
+  {"name":"Fox News", "identifier":"foxnews.com"},
+  {"name":"Fox News", "identifier":"foxnews-com.cdn.ampproject.org"},
+  {"name":"Tech Bargains.com", "identifier":"techbargains.com"},
+  {"name":"Slashdot - Online News", "identifier":"fsdn.com"},
+  {"name":"Slashdot - Online News", "identifier":"slashdot.org"},
+  {"name":"Slashdot - Online News", "identifier":"d3tglifpd8whs6.cloudfront.net"},
+  {"name":"Slashdot - Online News", "identifier":"slashdotmedia.com"},
+  {"name":"Youtube", "identifier":"youtube.com"},
+  {"name":"Youtube", "identifier":"ytimg.com"},
+  {"name":"Youtube", "identifier":"googlevideo.com"},
+  {"name":"Youtube", "identifier":"yt3.ggpht.com"},
+  {"name":"Youtube", "identifier":"youtu.be"},
+  {"name":"Youtube", "identifier":"youtubei.googleapis.com"},
+  {"name":"Gmail", "identifier":"mail.google.com"},
+  {"name":"Gmail", "identifier":"inbox.google.com"},
+  {"name":"Gmail", "identifier":"ogs.google.com"},
+  {"name":"Gmail", "identifier":"mtalk.google.com"},
+  {"name":"Google Drive", "identifier":"drive.google.com"},
+  {"name":"Google Maps", "identifier":"maps.google.com"},
+  {"name":"Google Maps", "identifier":"geo0.ggpht.com"},
+  {"name":"Google Maps", "identifier":"geo1.ggpht.com"},
+  {"name":"Google Maps", "identifier":"geo2.ggpht.com"},
+  {"name":"Google Maps", "identifier":"geo3.ggpht.com"},
+  {"name":"Google Maps", "identifier":"google.com/maps"},
+  {"name":"", "identifier":""},
   {"name":"", "identifier":""},
 
 ]
+
+
 
         // Remove this from results
         if (o.URL.includes('facebook.com') && o.URL.includes('domain%3D')) {
@@ -298,446 +489,80 @@ var sites = [
         if (o.URL.includes('clients') && o.URL.includes('google.com')) {
           o.URL = 'Google'
         }
-        if (o.URL.includes('redbox.com')) {
-          o.URL = 'Redbox'
-        }
-
-        if (o.URL.includes('instagram.com')) {
-          o.URL = 'Instagram'
-        }
-
-        if (o.URL.includes('spotify.com') ||
-            o.URL.includes('scdn.co')) {
-          o.URL = 'Spotify'
-        }
-
-        if (o.URL.includes('waze.com')) {
-          o.URL = 'Waze Navigation App'
-        }
-        if (o.URL.includes('unity3d.com')) {
-          o.URL = 'Online Games'
-        }
-
-        if (o.URL.includes('flixsterstatic.s3-us-west-2.amazonaws.com')) {
-          o.URL = 'Flixster By Fandango'
-        }
-
-        if (o.URL.includes('uber.com')) {
-          o.URL = 'Uber'
-        }
-
-        if (o.URL.includes('ncaa.com')) {
-          o.URL = 'NCAA Sports'
-        }
-
-        if (o.URL.includes('fmfmobile.icloud.com') ||
-            o.URL.includes('fmip.icloud.com')) {
-          o.URL = 'Find My Friends'
-        }
-
-        if (o.URL.includes('caldav.icloud.com')) {
-          o.URL = 'Apple Calendar App'
-        }
-
-        if (o.URL.includes('streamrail.net') ||
-            o.URL.includes('streamrail.com')) {
-          o.URL = 'Content Delivery Network'
-        }
-
-        if (o.URL.includes('cloud.rovio.com/apdrive/2/apps/Abba') ||
-            o.URL.includes('cloudassets-a.akamaihd.net/apdrive/Abba')) {
-          o.URL = 'Angry Birds Game'
-        }
-
-        if (o.URL.includes('mtalk.google.com') ||
-            o.URL.includes('play.google.com') ||
-            o.URL.includes('notifications.google.com') ||
-            o.URL.includes('hangouts.google.com')) {
-          o.URL = 'Google Background Services'
-        }
-
-        if (o.URL.includes('mcafee.com')) {
-          o.URL = 'McAfee Antivirus'
-        }
-
-        // cl1 = CommCenterMobileHelper, cl2/cl3/cl4=locationd
-        if (o.URL.includes('lcdn-locator.apple.com') ||
-            o.URL.includes('push.apple.com') ||
-            o.URL.includes('cl1.apple.com') ||
-            o.URL.includes('cl2.apple.com') ||
-            o.URL.includes('cl3.apple.com') ||
-            o.URL.includes('cl4.apple.com') ||
-            o.URL.includes('cl5.apple.com') ||
-            o.URL.includes('iphonesubmissions.apple.com') ||
-            o.URL.includes('iphone-ld.apple.com') ||
-            o.URL.includes('valid.apple.com') ||
-            o.URL.includes('gs-loc.apple.com') ||
-            o.URL.includes('identity.ess.apple.com') ||
-            o.URL.includes('17.167.195.92') ||
-            o.URL.includes('17.167.193.57') ||
-            o.URL.includes('mesu.apple.com') ||
-            o.URL.includes('gsas.apple.com')) {
-          o.URL = abs
-        }
-
-        if (o.URL.includes('move.com') ||
-            o.URL.includes('rdcpix.com')) {
-          o.URL = 'Move.com'
-        }
-
-        if (o.URL.includes('1h23on8hs5s44c2iqm9tze2x.wpengine.netdna-cdn.com') ||
-            o.URL.includes('visitmysmokies.com')) {
-          o.URL = 'Visit My Smokies.com'
-        }
-
-        if (o.URL.includes('bbb.org')) {
-          o.URL = 'Better Business Bureau'
-        }
-
-        if (o.URL.includes('airbnb.com') ||
-            o.URL.includes('a0.muscache.com') ||
-            o.URL.includes('a1.muscache.com') ||
-            o.URL.includes('a2.muscache.com') ||
-            o.URL.includes('t1.musthird.com') ||
-            o.URL.includes('www.airbnb.')) {
-          o.URL = 'AirBnB'
-        }
-
-        if (o.URL.includes('volnation.com')) {
-          o.URL = 'Volnation.com'
-        }
-
-        if (o.URL.includes('ups.com')) {
-          o.URL = 'UPS'
-        }
-
-        if (o.URL.includes('kayak.com') ||
-            o.URL.includes('www.kayak.')) {
-          o.URL = 'Kayak.com'
-        }
-
-        if (o.URL.includes('paypal.com') ||
-            o.URL.includes('paypalobjects.com')) {
-          o.URL = 'Paypal'
-        }
-
-        if (o.URL.includes('meetup.com') ||
-            o.URL.includes('meetupstatic.com')) {
-          o.URL = 'Meetup.com - Online community'
-        }
-
-        if (o.URL.includes('largecabinrentals.com')) {
-          o.URL = 'Large Cabin Rentals.com'
-        }
-
-        if (o.URL.includes('gravatar.com')) {
-          o.URL = 'Gravatar Content Delivery Network'
-        }
-
-        if (o.URL.includes('1z47agptxli27tiku3dc533qfa.wpengine.netdna-cdn.com') ||
-            o.URL.includes('hiddenmountain.com')) {
-          o.URL = 'Hidden Mountain Resort'
-        }
 
-        if (o.URL.includes('moviepass.com')) {
-          o.URL = 'Movie Pass'
+        if (o.URL.includes('a.appbaqend.com') ||
+          o.URL.includes('a.26f396e0b71780f057be4d4af8ebe55b.com') ||
+           {
+          o.URL = 'My Hurricane Tracker App'
         }
 
-        if (o.URL.includes('flexmls.com')) {
-          o.URL = 'Flex MLS'
+        if (o.URL.includes('api.')) {
+          o.URL = o.URL.replace('api.', '')
         }
-
-        if (o.URL.includes('showings.com')) {
-          o.URL = 'Showings.com - Real Estate'
-        }
-
-        if (o.URL.includes('discover.com')) {
-          o.URL.includes('Discover Credit Card')
-        }
-
-        if (o.URL.includes('jquery.com')) {
-          o.URL = 'jQuery - Online Assets'
-        }
-
-        if (o.URL.includes('skype.com')) {
-          o.URL = 'Skype'
-        }
-
-        if (o.URL.includes('ebay.com.') ||
-            o.URL.includes('www.ebay.') ||
-            o.URL.includes('ebayimg.com') ||
-            o.URL.includes('ebay.com')) {
-          o.URL = 'Ebay'
-        }
-
-        if (o.URL.includes('bradleyschools.org')) {
-          o.URL = 'Bradley County Schools'
-        }
-
-        if (o.URL.includes('blundstone.com')) {
-          o.URL = 'Blundstone Boots'
-        }
-
-        if (o.URL.includes('bluesombrero.com')) {
-          o.URL = 'Dicks Sporting Goods'
-        }
-
-        if (o.URL.includes('amway.com')) {
-          o.URL = 'Amway Online'
-        }
-
-        if (o.URL.includes('fontawesome.com') ||
-            o.URL.includes('use.typekit.net')) {
-          o.URL = 'Online Assets - Fonts'
-        }
-
-        if (o.URL.includes('tdeconline.tn.gov')) {
-          o.URL = 'Tenneessee Online'
-        }
-
-        if (o.URL.includes('zedge.net') ||
-            o.URL.includes('zobj.net')) {
-          o.URL = 'Zedge.net - Free wallpapers and ringtones'
-        }
-
-        if (o.URL.includes('tmobile.com')) {
-          o.URL = 'T-Mobile'
-        }
-
-        if (o.URL.includes('stripe.com')) {
-          o.URL = 'Stripe Online Payments'
-        }
-
-        if (o.URL.includes('fapdep.com')) {
-          o.URL = 'FapDep Pornography'
-        }
-
-        if (o.URL.includes('nytimes.com')) {
-          o.URL = 'New York Times Online'
-        }
-
-        if (o.URL.includes('healthequity.com')) {
-          o.URL = 'Health Equity.com'
-        }
-
-        if (o.URL.includes('maytag.com')) {
-          o.URL = 'Maytag Appliances'
-        }
-
-        if (o.URL.includes('preguntados.com')) {
-          o.URL = 'Trivia Crack App'
-        }
-
-        if (o.URL.includes('amp-usatoday-com.cdn.ampproject.org') ||
-            o.URL.includes('usatoday.com')) {
-          o.URL = 'USA Today.com'
+        if (o.URL.includes('marcopolo.me') ||
+            o.URL.includes('hb-img.s3.amazonaws.com') ||
+            o.URL.includes('onpolo.com') ||
+            o.URL.includes('d1yalerk4ruah8.cloudfront.net') ||
+            o.URL.includes('marco.feathr.co') ||
+            o.URL.includes('speedys3-hb.s3.amazonaws.com')) {
+          o.URL = 'Marco Polo App'
         }
 
-        if (o.URL.includes('target.com') ||
-            o.URL.includes('scene7.targetimg1.com') ||
-            o.URL.includes('target.scene7.com')) {
-          o.URL = 'Target'
-        }
-
-        if (o.URL.includes('/1.gif?')) {
-          o.URL = 'Tracking Cookie'
-        }
 
-        if (o.URL.includes('.woff2')) {
-          o.URL = 'Font Resources'
-        }
 
-        if (o.URL.includes('jackboxgames.com') ||
-            o.URL.includes('jackbox.tv')) {
-          o.URL = 'Jack Box Games'
+        if (o.URL.includes('snapchat.com') ||
+          o.URL.includes('sc-cdn.net') ||
+          o.URL.includes('instalog-prod.sc-prod.net') ||
+          o.URL.includes('am-prod.sc-jpl.com') ||
+          o.URL.includes('sc-analytics.appspot.com')) {
+          o.URL = 'Snapchat'
         }
 
-        if (o.URL.includes('contentgrid.homedepot-static.com') ||
-            o.URL.includes('homedepot.com')) {
-          o.URL = 'Home Depot'
-        }
 
-        if (o.URL.includes('creditkarmacdn-a.akamaihd.net') ||
-            o.URL.includes('creditkarma.com') ||
-            o.URL.includes('creditkarma.zendesk.com')) {
-          o.URL = 'Credit Karma'
-        }
 
-        if (o.URL.includes('yeti.com') ||
-            o.URL.includes('image.emailyeticoolers.com')) {
-          o.URL = 'Yeti Coolers'
+        if (o.URL.includes('itunes.apple.com-a.akamaihd.net') ||
+            o.URL.includes('itunes.com') ||
+            o.URL.includes('itunes.apple.com')) {
+          o.URL = 'Apple iTunes'
         }
 
-        if (o.URL.includes('llbean.com')) {
-          o.URL = 'LL Bean'
-        }
 
-        if (o.URL.includes('seriouseats.com') ||
-            o.URL.includes('www-seriouseats-com.cdn.ampproject.org')) {
-          o.URL = 'Serious Eats'
+        if (o.URL.includes('bible.com') ||
+            o.URL.includes('youversion.com') ||
+            o.URL.includes('youversioncom') ||
+            o.URL.includes('d34xairzvf2fpg.cloudfront.net') ||
+            o.URL.includes('youversionapi.com')) {
+          o.URL = 'Youversion Bible App'
         }
 
-
-
-        if (o.URL.includes('onenote.com')) {
-          o.URL = 'Microsoft One Note'
+        if (o.URL.includes('myfitnesspal.com')) {
+          o.URL = 'My Fitness Pal app'
         }
 
-        if (o.URL.includes('united.com')) {
-          o.URL = 'United Airlines'
+        if (o.URL.includes('sndcdn.com') ||
+            o.URL.includes('soundcloud.com')) {
+          o.URL = 'Sound Cloud'
         }
-
-        if (o.URL.includes('yourstreamlive.com')) {
 
-        }
 
-        if (o.URL.includes('simple.com')) {
-          o.URL = 'Simple Banking app'
+        if (o.URL.includes('outlook.office365.com') ||
+            o.URL.includes('login.microsoftonline.com') ||
+            o.URL.includes('mobile.pipe.aria.microsoft.com') ||
+            o.URL.includes('outlookmobile-office365-tas.msedge.net') ||
+            o.URL.includes('outlook.office.com')) {
+          o.URL = 'Microsoft Outlook'
         }
 
-        if (o.URL.includes('flipp.com')) {
-          o.URL = 'Flipp Mobile App'
-        }
 
-        if (o.URL.includes('trello.com')) {
-          o.URL = 'Trello'
-        }
 
-        if (o.URL.includes('simplegive.com')) {
-          o.URL = 'Simple Give - Online Giving'
+        if (o.URL.includes('groupme.com') ||
+            o.URL.includes('powerups.s3.amazonaws.com ')) {
+          o.URL = 'Groupme'
         }
-
-            if (o.URL.includes('utmost.org') ||
-                o.URL.includes('d197n5kam3wa4q.cloudfront.net')) {
-              o.URL = 'My Utmost for His Highest'
-            }
-
-            if (o.URL.includes('d1lqe9temigv1p.cloudfront.net') ||
-                o.URL.includes('d29usylhdk1xyu.cloudfront.net') ||
-                o.URL.includes('ajc.com')) {
-              o.URL = 'Atlanta Journal-Constitution - Newpaper'
-            }
-
-            if (o.URL.includes('d21cwiu5j1gnvv.cloudfront.net') ||
-                o.URL.includes('dots.co')) {
-              o.URL = 'Two Dots - Puzzle Game'
-            }
-
-            if (o.URL.includes('bleacherreport.com') ||
-                o.URL.includes('bleacherreport.net') ||
-                o.URL.includes('bleacherreptrans-a.akamaihd.net')) {
-              o.URL = 'Bleacher Report'
-            }
-
-            if (o.URL.includes('nflxso.net') ||
-                o.URL.includes('netflix.com') ||
-                o.URL.includes('198.38.99.1') ||
-                o.URL.includes('66.18.33.6') ||
-                o.URL.includes('66.18.34.4') ||
-                o.URL.includes('nflxvideo.net')) {
-              o.URL = 'Netflix'
-            }
-
-
-            if (o.URL.includes('wellsfargomedia.com') ||
-                o.URL.includes('wellsfargo.com')) {
-              o.URL = 'Wells Fargo'
-            }
-
-            if (o.URL.includes('d1th6rei50eu1y.cloudfront.net') ||
-                o.URL.includes('planningcenterassets.s3.amazonaws.com') ||
-                o.URL.includes('planningcenteronline.com') ||
-                o.URL.includes('pco.bz') ||
-                o.URL.includes('planning.center')) {
-              o.URL = 'Planning Center'
-            }
-
-            if (o.URL.includes('snimg.com') ||
-                o.URL.includes('sportingnews.com') ||
-                o.URL.includes('sporting-news.info')) {
-              o.URL = 'Sporting News'
-            }
-
-            if (o.URL.includes('optimizely.com')) {
-              o.URL = 'Optimizely'
-            }
-
-            if (o.URL.includes('9to5maccom.disqus.com') ||
-                o.URL.includes('9to5mac.com') ||
-                o.URL.includes('9to5mac.files.wordpress.com')) {
-              o.URL = '9 To 5 Mac'
-            }
-
-            if (o.URL.includes('hulu.com') ||
-                o.URL.includes('hulustream.com')) {
-              o.URL = 'Hulu'
-            }
-            if (o.URL.includes('sprtlive16.akamaized.net') ||
-                o.URL.includes('nbcsports.com') ||
-                o.URL.includes('nbcume.hb.omtrdc.net"')) {
-              o.URL = 'NBC Sports'
-            }
-
-            if (o.URL.includes('justin.tv') ||
-                o.URL.includes('video-edge-c2a3d4.atl01.hls.ttvnw.net"')) {
-              o.URL = 'Twitch Live streaming'
-            }
-
-            if (o.URL.includes('myaccount.google.com')) {
-              o.URL = 'Gmail account settings'
-            }
-
-            if (o.URL.includes('utc.edu')) {
-              o.URL = 'UTC Online'
-            }
-
-            if (o.URL.includes('blubrry.com') ||
-                o.URL.includes('pcr.apple.com')) {
-              o.URL = 'Online Podcasts'
-            }
-
-            if (o.URL.includes('tumblr.com')) {
-              o.URL = 'Tumblr Online Blogs'
-            }
-
-            if (o.URL.includes('d1e7kr0efngifs.cloudfront.net') ||
-                o.URL.includes('blackboard.com')) {
-              o.URL = 'Blackboard Online Learning'
-            }
-
-            if (o.URL.includes('v.redd.it')) {
-              o.URL = 'Reddit Videos'
-            }
-
-            if (o.URL.includes('mail.aol.com')) {
-              o.URL = 'AOL WebMail'
-            }
-
-            if (o.URL.includes('aol.com') ||
-                o.URL.includes('aolcdn.com')) {
-              o.URL = 'AOL.COM'
-            }
-
-            if (o.URL.includes('nimblebit.com')) {
-              o.URL = 'Nimblebit Games'
-            }
-
-            if (o.URL.includes('verizon.com') ||
-                o.URL.includes('verizonwireless.com')) {
-              o.URL = 'Verizon Wireless'
-            }
-
-            if (o.URL.includes('macrumors.com')) {
-              o.URL = 'Mac Rumors - Apple News'
-            }
 
             // This is a bad one, definately need to block.  When running the app it downloads a JSON file containing a list of known porn sites in the background.
             // https://f43d76c20358c312d1b5be2de6e5dc43ia.com/v1/unblockedvideo?countryCode=US&os=ios
-            if (o.URL.includes('di4y6ic2m2jmc.cloudfront.net') ||
-                o.URL.includes('f43d76c20358c312d1b5be2de6e5dc43ia.com') ||
-                o.URL.includes('alohabrowser.com')) {
-              o.URL = 'Aloha VPN browser'
-            }
+
 
             if (o.URL.includes('clashroyaleapp.com') ||
                 o.URL.includes('1681.engine.mobileapptracking.com') ||
@@ -771,29 +596,4 @@ var sites = [
                 o.URL.includes('collector-pxhyx10rg3.perimeterx.net') ||
                 o.URL.includes('zillowstatic.com')) {
               o.URL = 'Zillow'
-            }
-            if (o.URL.includes('icloud.com') ||
-                o.URL.includes('blobstore.apple.com')) {
-              o.URL = 'iCloud'
-            }
-
-            if (o.URL.includes('musiciansfriend.com')) {
-              o.URL = 'Musicians Friend.com'
-            }
-
-            if (o.URL.includes('fncstatic.com') ||
-                o.URL.includes('foxnews.com') ||
-                o.URL.includes('foxnews-com.cdn.ampproject.org')) {
-              o.URL = 'Fox News'
-            }
-
-            if (o.URL.includes('techbargains.com')) {
-              o.URL = 'Tech Bargains'
-            }
-
-            if (o.URL.includes('fsdn.com') ||
-                o.URL.includes('slashdot.org') ||
-                o.URL.includes('d3tglifpd8whs6.cloudfront.net') ||
-                o.URL.includes('slashdotmedia.com')) { // fsdn.com is used to serve assets for slashdot
-              o.URL = 'Slashdot Nerd News'
             }

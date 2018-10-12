@@ -1069,6 +1069,23 @@ exports.parser = function (obj) {
       {"identifier":"AppleNewsAgent", "name":"Apple News app"},
       {"identifier":"cloudd", "name":"iCloud Content"},
       {"identifier":"Yummly-iPhone", "name":"Yummly - Personalized Recipes"},
+      {"identifier":"dc72976c7e9a4e749e3af5d95.litix.io", "name":"Video Game News, Reviews, and Walkthroughs - IGN.com"},
+      {"identifier":"My%20Hurricane%20Tracker", "name":"My Hurricane Tracker App"},
+      {"identifier":"com.google.ios.youtube", "name": "YouTube App"},
+      {"identifier":"com.google.Gmail", "name":"Gmail"},
+      {"identifier":"Google.Drive", "name":"Google Drive"},
+      {"identifier":"com.google.Maps", "name":"Google Maps"},
+      {"identifier":"MarcoPolo", "name":"Marco Polo App"},
+      {"identifier":"Snapchat", "name":"Snapchat App"},
+      {"identifier":"itunesstored", "name":"Apple iTunes"},
+      {"identifier":"Bible","name":"Youversion Bible App"},
+      {"identifier":"SoundCloud","name":"SoundCloud"},
+      {"identifier":"Podcasts","name":"Apple Podcasts App"},
+      {"identifier":"Outlook","name":"Microsoft Outlook"},
+      {"identifier":"GroupMe","name":"GroupMe App"},
+      {"identifier":"","name":""},
+      {"identifier":"","name":""},
+
     ]
 
 
@@ -1097,139 +1114,12 @@ exports.parser = function (obj) {
     if (o.URL.includes('doubleverify.com')) {
       o.URL = ''
     }
-    if (o.userAgent.includes('dc72976c7e9a4e749e3af5d95.litix.io')) {
-      o.URL = 'Video Game News, Reviews, and Walkthroughs - IGN.com'
-    }
 
     if (o.URL.includes('.helpshift.com')) {
       o.URL = ''
     }
 
-    if (o.URL.includes('a.appbaqend.com') ||
-      o.URL.includes('a.26f396e0b71780f057be4d4af8ebe55b.com') ||
-      o.userAgent.includes('My%20Hurricane%20Tracker')) {
-      o.URL = 'My Hurricane Tracker App'
-    }
-
-    if (o.URL.includes('api.')) {
-      o.URL = o.URL.replace('api.', '')
-    }
-
-
-
-    if (o.URL.includes('youtube.com') ||
-        o.URL.includes('ytimg.com') ||
-        o.URL.includes('googlevideo.com') ||
-        o.URL.includes('yt3.ggpht.com') ||
-        o.URL.includes('youtu.be') ||
-        o.userAgent.includes('YouTube') ||
-        o.userAgent.includes('com.google.ios.youtube') ||
-        o.URL.includes('youtubei.googleapis.com:')) {
-      o.URL = 'Youtube'
-    }
-
-
-
-
-    if (o.URL.includes('mail.google.com') ||
-        o.URL.includes('inbox.google.com') ||
-        o.URL.includes('ogs.google.com') ||
-        o.userAgent.includes('com.google.Gmail') ||
-        o.URL.includes('mtalk.google.com')) {
-      o.URL = 'Gmail'
-    }
-
-
-    if (o.URL.includes('drive.google.com') ||
-      o.userAgent.includes('Google.Drive')) {
-      o.URL = 'Google Drive'
-    }
-
-    if (o.URL.includes('maps.google.com') ||
-        o.URL.includes('geo0.ggpht.com') ||
-        o.URL.includes('geo1.ggpht.com') ||
-        o.URL.includes('geo2.ggpht.com') ||
-        o.URL.includes('geo3.ggpht.com') ||
-        o.userAgent.includes('com.google.Maps') ||
-        o.URL.includes('google.com/maps')) {
-      o.URL = 'Google Maps'
-    }
-
-
-
-    if (o.URL.includes('marcopolo.me') ||
-        o.userAgent.includes('MarcoPolo') ||
-        o.URL.includes('hb-img.s3.amazonaws.com') ||
-        o.URL.includes('onpolo.com') ||
-        o.URL.includes('d1yalerk4ruah8.cloudfront.net') ||
-        o.URL.includes('marco.feathr.co') ||
-        o.URL.includes('speedys3-hb.s3.amazonaws.com')) {
-      o.URL = 'Marco Polo App'
-    }
-
-
-
-    if (o.URL.includes('snapchat.com') ||
-      o.URL.includes('sc-cdn.net') ||
-      o.URL.includes('instalog-prod.sc-prod.net') ||
-      o.URL.includes('am-prod.sc-jpl.com') ||
-      o.userAgent.includes('Snapchat') ||
-      o.URL.includes('sc-analytics.appspot.com')) {
-      o.URL = 'Snapchat'
-    }
-
-
-
-    if (o.URL.includes('itunes.apple.com-a.akamaihd.net') ||
-        o.URL.includes('itunes.com') ||
-        o.userAgent.includes('itunesstored') ||
-        o.URL.includes('itunes.apple.com')) {
-      o.URL = 'Apple iTunes'
-    }
-
-
-    if (o.URL.includes('bible.com') ||
-        o.URL.includes('youversion.com') ||
-        o.URL.includes('youversioncom') ||
-        o.URL.includes('d34xairzvf2fpg.cloudfront.net') ||
-        o.userAgent.includes('Bible') ||
-        o.URL.includes('youversionapi.com')) {
-      o.URL = 'Youversion Bible App'
-    }
-
-    if (o.URL.includes('myfitnesspal.com')) {
-      o.URL = 'My Fitness Pal app'
-    }
-
-    if (o.URL.includes('sndcdn.com') ||
-        o.userAgent.includes('SoundCloud') ||
-        o.URL.includes('soundcloud.com')) {
-      o.URL = 'Sound Cloud'
-    }
-
-
-
-    if (o.userAgent.includes('Podcasts')) {
-      o.URL = 'Apple Podcasts App'
-    }
-
-    if (o.URL.includes('outlook.office365.com') ||
-        o.URL.includes('login.microsoftonline.com') ||
-        o.URL.includes('mobile.pipe.aria.microsoft.com') ||
-        o.URL.includes('outlookmobile-office365-tas.msedge.net') ||
-        o.userAgent.includes('Outlook') ||
-        o.URL.includes('outlook.office.com')) {
-      o.URL = 'Microsoft Outlook'
-    }
-
-
-
-    if (o.URL.includes('groupme.com') ||
-        o.userAgent.includes('GroupMe') ||
-        o.URL.includes('powerups.s3.amazonaws.com ')) {
-      o.URL = 'Groupme'
-    }
-
+  
 
     if (o.URL.includes('prime.amazon.com') ||
       o.userAgent.includes('InstantVideo.US') ||
