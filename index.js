@@ -1083,6 +1083,16 @@ exports.parser = function (obj) {
       {"identifier":"Podcasts","name":"Apple Podcasts App"},
       {"identifier":"Outlook","name":"Microsoft Outlook"},
       {"identifier":"GroupMe","name":"GroupMe App"},
+      {"identifier":"InstantVideo.US","name":"Amazon Prime Video"},
+      {"identifier":"Prime%20Video","name":"Amazon Prime Video"},
+      {"identifier":"GIF%20Keyboard","name":"GIF Keyboard"},
+      {"identifier":"geod","name":"Apple Location Services"},
+      {"identifier":"locationd","name":"Apple Location Services"},
+      {"identifier":"PlexMobile","name":"Plex - Streaming Movies and TV"},
+      {"identifier":"AppStore","name":"Apple App Store"},
+      {"identifier":"Self%20Employed","name":"Quickbooks Self Employed App"},
+      {"identifier":"ConnectMobile","name":"Garmin Connect App"},
+      {"identifier":"","name":""},
       {"identifier":"","name":""},
       {"identifier":"","name":""},
 
@@ -1118,60 +1128,12 @@ exports.parser = function (obj) {
     if (o.URL.includes('.helpshift.com')) {
       o.URL = ''
     }
-
-  
-
-    if (o.URL.includes('prime.amazon.com') ||
-      o.userAgent.includes('InstantVideo.US') ||
-      o.userAgent.includes('Prime%20Video')) {
-      o.URL = 'Amazon Prime Video'
-    }
-
-
-    if (o.URL.includes('api.tenor.com') ||
-        o.userAgent.includes('GIF%20Keyboard') ||
-        o.URL.includes('media.tenor.com')) {
-      o.URL = 'Tenor GIF Keyboard'
-    }
-
-    if (o.userAgent.includes('geod') ||
-      o.userAgent.includes('locationd')) {
-      o.URL = 'Apple Location Services'
-    }
-
-    if (o.URL.includes('google.com/carddav') || o.URL.includes('contacts.google.com')) {
-      o.URL = 'Gmail Contacts'
-    }
-
-
-    if (o.URL.includes('plex.tv') ||
-        o.userAgent.includes('PlexMobile') ||
-        o.URL.includes('plex.direct')) {
-      o.URL = 'Plex streaming movies and tv shows'
-    }
-
-    if (o.URL.includes('mzstatic.com') ||
-        o.userAgent.includes('AppStore')) {
-      o.URL = 'Apple App Store'
-    }
-
-    if (o.userAgent.includes('Self%20Employed')) {
-      o.URL = 'Quickbooks Self Employed app'
-    }
-
-    if (o.userAgent.includes('ConnectMobile')) {
-      o.URL = 'Garmin Connect app'
-    }
-
     if (o.URL.includes('facebook.com') && o.URL.includes('S&mobile_iframe=true')) {
       o.URL = ads
     }
-
     if (o.URL.includes('facebook.com') && o.deviceId.includes('973279683378823765')) {
       o.URL = ads
     }
-
-
     if (o.catsBlocked == 'ads') {
       o.URL = ads
     }

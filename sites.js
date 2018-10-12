@@ -474,126 +474,68 @@ var sites = [
   {"name":"Google Maps", "identifier":"geo2.ggpht.com"},
   {"name":"Google Maps", "identifier":"geo3.ggpht.com"},
   {"name":"Google Maps", "identifier":"google.com/maps"},
+  {"name":"My Hurricane Tracker App", "identifier":"a.appbaqend.com"},
+  {"name":"My Hurricane Tracker App", "identifier":"a.26f396e0b71780f057be4d4af8ebe55b.com"},
+  {"name":"Marco Polo App", "identifier":"marcopolo.me"},
+  {"name":"Marco Polo App", "identifier":"hb-img.s3.amazonaws.com"},
+  {"name":"Marco Polo App", "identifier":"onpolo.com"},
+  {"name":"Marco Polo App", "identifier":"d1yalerk4ruah8.cloudfront.net"},
+  {"name":"Marco Polo App", "identifier":"marco.feathr.co"},
+  {"name":"Marco Polo App", "identifier":"speedys3-hb.s3.amazonaws.com"},
+  {"name":"Snapchat", "identifier":"snapchat.com"},
+  {"name":"Snapchat", "identifier":"sc-cdn.net"},
+  {"name":"Snapchat", "identifier":"instalog-prod.sc-prod.net"},
+  {"name":"Snapchat", "identifier":"am-prod.sc-jpl.com"},
+  {"name":"Snapchat", "identifier":"sc-analytics.appspot.com"},
+  {"name":"Apple iTunes", "identifier":"itunes.apple.com-a.akamaihd.net"},
+  {"name":"Apple iTunes", "identifier":"itunes.com"},
+  {"name":"Apple iTunes", "identifier":"itunes.apple.com"},
+  {"name":"Youversion Bible App", "identifier":"bible.com"},
+  {"name":"Youversion Bible App", "identifier":"youversion.com"},
+  {"name":"Youversion Bible App", "identifier":"youversioncom"},
+  {"name":"Youversion Bible App", "identifier":"d34xairzvf2fpg.cloudfront.net"},
+  {"name":"Youversion Bible App", "identifier":"youversionapi.com"},
+  {"name":"My Fitness Pal App", "identifier":"myfitnesspal.com"},
+  {"name":"Sound Cloud", "identifier":"sndcdn.com"},
+  {"name":"Sound Cloud", "identifier":"soundcloud.com"},
+  {"name":"Microsoft Outlook", "identifier":"outlook.office365.com"},
+  {"name":"Microsoft Outlook", "identifier":"login.microsoftonline.com"},
+  {"name":"Microsoft Outlook", "identifier":"mobile.pipe.aria.microsoft.com"},
+  {"name":"Microsoft Outlook", "identifier":"outlookmobile-office365-tas.msedge.net"},
+  {"name":"Microsoft Outlook", "identifier":"outlook.office.com"},
+  {"name":"GroupMe App", "identifier":"groupme.com"},
+  {"name":"GroupMe App", "identifier":"powerups.s3.amazonaws.com"},
+  {"name":"Clash Royale", "identifier":"clashroyaleapp.com"},
+  {"name":"Clash Royale", "identifier":"1681.engine.mobileapptracking.com"},
+  {"name":"Clash Royale", "identifier":"clashroyale.com"},
+  {"name":"Clash Royale", "identifier":"cr.clan-play.com"},
+  {"name":abs, "identifier":"iforgot.apple.com"},
+  {"name":"Apple iCloud Game Center", "identifier":"gc.apple.com"},
+  {"name":"Minor League Baseball Online", "identifier":"milb.com"},
+  {"name":"Zillow", "identifier":"zillow.com"},
+  {"name":"Zillow", "identifier":"collector-pxhyx10rg3.perimeterx.net"},
+  {"name":"Zillow", "identifier":"zillowstatic.com"},
+  {"name":"Amazon Prime Video", "identifier":"prime.amazon.com"},
+  {"name":"GIF Keyboard", "identifier":"api.tenor.com"},
+  {"name":"GIF Keyboard", "identifier":"media.tenor.com"},
+  {"name":gbs, "identifier":"google.com/carddav"},
+  {"name":gbs, "identifier":"contacts.google.com"},
+  {"name":"Plex Streaming Movies and TV", "identifier":"plex.tv"},
+  {"name":"Plex Streaming Movies and TV", "identifier":"plex.direct"},
+  {"name":"Apple App Store", "identifier":",mzstatic.com"},
   {"name":"", "identifier":""},
   {"name":"", "identifier":""},
 
 ]
-
-
-
-        // Remove this from results
+      // Remove this from results
         if (o.URL.includes('facebook.com') && o.URL.includes('domain%3D')) {
           o.URL = ads
         }
-
         if (o.URL.includes('clients') && o.URL.includes('google.com')) {
           o.URL = 'Google'
         }
-
-        if (o.URL.includes('a.appbaqend.com') ||
-          o.URL.includes('a.26f396e0b71780f057be4d4af8ebe55b.com') ||
-           {
-          o.URL = 'My Hurricane Tracker App'
-        }
-
         if (o.URL.includes('api.')) {
           o.URL = o.URL.replace('api.', '')
         }
-        if (o.URL.includes('marcopolo.me') ||
-            o.URL.includes('hb-img.s3.amazonaws.com') ||
-            o.URL.includes('onpolo.com') ||
-            o.URL.includes('d1yalerk4ruah8.cloudfront.net') ||
-            o.URL.includes('marco.feathr.co') ||
-            o.URL.includes('speedys3-hb.s3.amazonaws.com')) {
-          o.URL = 'Marco Polo App'
-        }
-
-
-
-        if (o.URL.includes('snapchat.com') ||
-          o.URL.includes('sc-cdn.net') ||
-          o.URL.includes('instalog-prod.sc-prod.net') ||
-          o.URL.includes('am-prod.sc-jpl.com') ||
-          o.URL.includes('sc-analytics.appspot.com')) {
-          o.URL = 'Snapchat'
-        }
-
-
-
-        if (o.URL.includes('itunes.apple.com-a.akamaihd.net') ||
-            o.URL.includes('itunes.com') ||
-            o.URL.includes('itunes.apple.com')) {
-          o.URL = 'Apple iTunes'
-        }
-
-
-        if (o.URL.includes('bible.com') ||
-            o.URL.includes('youversion.com') ||
-            o.URL.includes('youversioncom') ||
-            o.URL.includes('d34xairzvf2fpg.cloudfront.net') ||
-            o.URL.includes('youversionapi.com')) {
-          o.URL = 'Youversion Bible App'
-        }
-
-        if (o.URL.includes('myfitnesspal.com')) {
-          o.URL = 'My Fitness Pal app'
-        }
-
-        if (o.URL.includes('sndcdn.com') ||
-            o.URL.includes('soundcloud.com')) {
-          o.URL = 'Sound Cloud'
-        }
-
-
-        if (o.URL.includes('outlook.office365.com') ||
-            o.URL.includes('login.microsoftonline.com') ||
-            o.URL.includes('mobile.pipe.aria.microsoft.com') ||
-            o.URL.includes('outlookmobile-office365-tas.msedge.net') ||
-            o.URL.includes('outlook.office.com')) {
-          o.URL = 'Microsoft Outlook'
-        }
-
-
-
-        if (o.URL.includes('groupme.com') ||
-            o.URL.includes('powerups.s3.amazonaws.com ')) {
-          o.URL = 'Groupme'
-        }
-
-            // This is a bad one, definately need to block.  When running the app it downloads a JSON file containing a list of known porn sites in the background.
-            // https://f43d76c20358c312d1b5be2de6e5dc43ia.com/v1/unblockedvideo?countryCode=US&os=ios
-
-
-            if (o.URL.includes('clashroyaleapp.com') ||
-                o.URL.includes('1681.engine.mobileapptracking.com') ||
-                o.URL.includes('clashroyale.com') ||
-                o.URL.includes('cr.clan-play.com')) {
-              o.URL = 'Clash Royale Games'
-            }
-
-            if (o.URL.includes('iforgot.apple.com')) {
-              o.URL = 'Apple Account settings'
-            }
-
-            if (o.URL.includes('gc.apple.com')) {
-              o.URL = 'iCloud Game Center'
-            }
-
-            if (o.URL.includes('b343.playfabapi.com')) {
-              o.URL = 'Idle Miner Tycoon - Game'
-            }
-
-            if (o.URL.includes('c845.playfabapi.com') ||
-                o.URL.includes('c845.playfabapi.com')) {
-              o.URL = 'Roller Coaster Tycoon - Game'
-            }
-
-            if (o.URL.includes('milb.com')) {
-              o.URL = 'Minor League Baseball'
-            }
-
-            if (o.URL.includes('zillow.com') ||
-                o.URL.includes('collector-pxhyx10rg3.perimeterx.net') ||
-                o.URL.includes('zillowstatic.com')) {
-              o.URL = 'Zillow'
-            }
+        // This is a bad one, definately need to block.  When running the app it downloads a JSON file containing a list of known porn sites in the background.
+        // https://f43d76c20358c312d1b5be2de6e5dc43ia.com/v1/unblockedvideo?countryCode=US&os=ios
